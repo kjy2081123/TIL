@@ -1,0 +1,3 @@
+select version();
+CREATE TABLE 
+
