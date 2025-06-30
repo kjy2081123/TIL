@@ -1,0 +1,12 @@
+use practice;
+desc userinfo;
+show tables;
+alter table userinfo add column email varchar(40) default 'ex@gmail.com';
+alter table userinfo modify column nickname varchar(100);
+ alter table userinfo drop column reg_date;
+ select * from userinfo ;
+ select * from userinfo where nickname= 'peter';
+ set sql_safe_updates= 0;
+ update userinfo set email= 'gx@gmail.com' where nickname= 'peter';
+ set sql_safe_updates= 1;
+ update userinfo set email= 'tx@gmail.com' where id= 30;
